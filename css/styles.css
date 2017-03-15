@@ -1,0 +1,289 @@
+/* Custom Style */
+/* TODO: TURN ALL COLORS INTO HEX CODES */
+html, body {
+    height: 100%;
+/*    background-image: url('bg/ep_naturalwhite/ep_naturalwhite.png');*/
+/*    background-repeat: repeat;*/
+    font-size: 100%;
+    background-color: #EDEDED;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 150%;
+}
+h2 {
+    font-family: 'Muli', sans-serif;
+}
+h3 {
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+}
+#navbar-collapse ul.nav li a {
+	font-family: 'Open Sans', sans-serif;
+    font-size: 90%;
+    font-weight: 500;
+    color: white;
+}
+#navbar-collapse ul.nav li a:hover {
+	background-color: darkslategray;
+}
+/* TODO: REMOVE THIS STYLING WHEN THE LOGO IS AVAILABLE */
+.navbar-brand {
+	font-family: 'Monsterrat', sans-serif;
+    font-weight: 800;
+    font-size: 98%;
+}
+.logo-end {
+	font-weight: 300;
+    color: bisque;
+}
+.jumbotron {
+	padding: 100px;
+    height: 100vh;
+    text-align: center;
+    background-image: url('../images/bg/abbey-park.JPG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: whitesmoke;
+    line-height: 150%;
+}
+.cover-text {
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10%;
+    padding: 2%;
+    border-radius: 30px;
+/*    background-color: rgba(0,0,0,0.4);*/
+}
+.cover-text h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+.thinText {
+    font-weight: 100;
+}
+section {
+    text-align: center;
+    padding: 200px 100px;
+}
+.section-header {
+/*    font-size: 3em;*/
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+    border-bottom: 1px solid white;
+    margin-bottom: 40px;
+}
+.sub-sec-header {
+	margin-top: 5%;
+    font-family: 'Muli', sans-serif
+    font-weight: 700;
+}
+.page-header h2 {
+	font-size: 5em;
+    text-shadow: 3px 3px 5px #000;
+}
+.page-header h5 {
+	letter-spacing: 2px;
+}
+.about-section p {
+	text-align: left;
+    line-height: 150%;
+}
+.sec-2 {
+    margin-top: 80px;
+}
+#aboutGU {
+	margin: 100px 0;
+}
+img.about-photos {
+    margin-top: 20%;
+}
+.quote {
+    margin-bottom: 20px;
+}
+/*#projNeigh, #contactInfo {
+	background-image: url('../images/bg/128-181.jpg');
+    background-repeat: repeat;
+    color: white;
+}*/
+.proj-sect-lft {
+	text-align: left;
+}
+.featurette-heading {
+	margin-top: 0;
+    font-family: 'Muli', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.featurette-image {
+	max-height: 450px;
+    border-radius: 10%;
+/*    margin-top: 10%;*/
+}
+.fader-image {
+	opacity: 0;
+}
+.profile {
+    max-width: 300px;
+    margin: 0 auto;
+}
+.tv-projects {
+	margin: 50px auto 70px;
+}
+.proj-sect-lft {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    resize: vertical;
+}
+.proj-sect-lft h2 {
+	margin: 0;
+    padding: 5%;
+}
+#teleProjects {
+	margin: 100px 0;
+}
+.embLink:link {
+	color: black;
+}
+.embLink:hover {
+	font-weight: 700;
+    text-decoration: none;
+}
+#contactInfo {
+	text-align: center;
+    font-family: 'Monsterrat', sans-serif;
+    padding: 200px 0;
+}
+.contact {
+	list-style: none;
+}
+#contactInfo a {
+	text-decoration: none;
+    color: black
+}
+#contactInfo a:hover {
+	color: grey;
+}
+#contactInfo i {
+	font-size: 50px;
+    margin: 10px 15px 30px 15px;
+}
+#contactInfo p {
+	font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+/*
+.carousel {
+    max-height: 80vh;
+    overflow: hidden;
+}
+*/
+footer {
+    background: rgba(0,0,0,0.9);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+}
+footer a {
+    color: firebrick;
+    width: 100%;
+}
+footer a:hover {
+    color: honeydew;
+    text-decoration: none;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 868px) {
+/* ==== IN EACH OF THESE SECTIONS THIS WILL SCALE *ALL* RESPONSIVE TEXT ELEMENTS WITH em,rem,%,etc. ==== */
+    html, body {
+        font-size: 90%;
+    }
+    img.about-photos {
+    margin-top: 0;
+}
+}
+
+@media only screen and (max-width: 792px) {
+    html, body {
+        font-size: 85%;
+    }
+    #navbar-collapse ul.nav li a {
+        font-size: 14px;
+    }
+    .navbar-brand {
+        font-size: 150%;
+    }
+    .jumbotron {
+        padding: 20px;
+        padding-top: 50px;
+    }
+    p {
+        font-size: 14px;
+    }
+    .section-header {
+        font-size: 2em;
+        font-weight: 700;
+        letter-spacing: 110%;
+}
+/* CHANGE BODY FONT SIZE WHEN SWITCHING DOWN SO EVERYTHING SCALES ACCORDINGLY */
+    section {
+        text-align: center;
+        padding: 10px 20px;
+    }
+}
+
+@media only screen and (max-width: 528px){
+    html, body {
+        font-size: 65%;
+    }
+    #navbar-collapse ul.nav li a {
+        font-size: 14px;
+    }
+    .navbar-brand {
+        font-size: 250%;
+    }
+/*
+    .jumbotron {
+        background-image: url(../images/bg/cle_skyline_elise_opt.jpg);
+*/
+    }
+    p.lead {
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+    }
+    h2.section-header {
+        font-size: 3em;
+        border-bottom: 1px solid white;
+    }
+    #contactInfo {
+	   font-size: 16px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

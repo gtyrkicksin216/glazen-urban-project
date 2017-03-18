@@ -41,6 +41,9 @@ h3 {
 	padding: 100px;
     height: 100vh;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background-image: url('../images/bg/abbey-park.JPG');
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,9 +53,9 @@ h3 {
 }
 .cover-text {
     font-family: 'Josefin Sans', sans-serif;
-    margin-top: 10%;
-    padding: 2%;
-    border-radius: 30px;
+/*    margin-top: 10%;*/
+/*    padding: 2%;*/
+/*    border-radius: 30px;*/
 /*    background-color: rgba(0,0,0,0.4);*/
 }
 .cover-text h2 {
@@ -106,9 +109,7 @@ img.about-photos {
     background-repeat: repeat;
     color: white;
 }*/
-.proj-sect-lft {
-	text-align: left;
-}
+
 .featurette-heading {
 	margin-top: 0;
     font-family: 'Muli', sans-serif;
@@ -130,13 +131,17 @@ img.about-photos {
 .tv-projects {
 	margin: 50px auto 70px;
 }
-.proj-sect-lft {
-	display: flex;
-    flex-direction: column;
+.v-center-100 {
+    display: flex;
     justify-content: center;
+    flex-direction: column;
     height: 100%;
-    resize: vertical;
 }
+.proj-sect-lft {
+    text-align: left;
+    line-height: 150%;
+}
+
 .proj-sect-lft h2 {
 	margin: 0;
     padding: 5%;

@@ -110,6 +110,12 @@ img.about-photos {
     color: white;
 }*/
 
+.v-center-100 {
+    min-height: inherit;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .featurette-heading {
 	margin-top: 0;
     font-family: 'Muli', sans-serif;
@@ -118,6 +124,7 @@ img.about-photos {
 }
 .featurette-image {
 	max-height: 450px;
+    min-height: 230px;
     border-radius: 10%;
 /*    margin-top: 10%;*/
 }
@@ -131,12 +138,7 @@ img.about-photos {
 .tv-projects {
 	margin: 50px auto 70px;
 }
-.v-center-100 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-}
+
 .proj-sect-lft {
     text-align: left;
     line-height: 150%;
@@ -144,7 +146,7 @@ img.about-photos {
 
 .proj-sect-lft h2 {
 	margin: 0;
-    padding: 5%;
+    padding: 0 5% 5%;
 }
 #teleProjects {
 	margin: 100px 0;

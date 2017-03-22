@@ -2,14 +2,14 @@
 /* TODO: TURN ALL COLORS INTO HEX CODES */
 html, body {
     height: 100%;
-/*    background-image: url('bg/ep_naturalwhite/ep_naturalwhite.png');*/
-/*    background-repeat: repeat;*/
     font-size: 100%;
     background-color: #EDEDED;
 }
 p {
     font-family: 'Montserrat', sans-serif;
     line-height: 150%;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
 }
 h2 {
     font-family: 'Muli', sans-serif;
@@ -27,21 +27,25 @@ h3 {
 #navbar-collapse ul.nav li a:hover {
 	background-color: darkslategray;
 }
-/* TODO: REMOVE THIS STYLING WHEN THE LOGO IS AVAILABLE */
-.navbar-brand {
-	font-family: 'Monsterrat', sans-serif;
-    font-weight: 800;
-    font-size: 98%;
+
+#nav-logo {
+    max-width: 120px;
+    position: relative;
+    top: -7px;
+    padding: 5px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
 }
-.logo-end {
-	font-weight: 300;
-    color: bisque;
-}
+
 .jumbotron {
 	padding: 100px;
     height: 100vh;
     text-align: center;
-    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     justify-content: center;
     flex-direction: column;
     background-image: url('../images/bg/abbey-park.JPG');
@@ -53,17 +57,30 @@ h3 {
 }
 .cover-text {
     font-family: 'Josefin Sans', sans-serif;
-/*    margin-top: 10%;*/
-/*    padding: 2%;*/
-/*    border-radius: 30px;*/
-/*    background-color: rgba(0,0,0,0.4);*/
+    padding: 20px 5px;
 }
-.cover-text h2 {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
+
+.top-text {
+    background: rgba(255,255,255,0.8);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    color: black;
+    padding-bottom: 25px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
 }
-.thinText {
-    font-weight: 100;
+
+#logo-img {
+    margin: 0 auto;
+/*    background: rgba(255,255,255,0.7);*/
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.page-header {
+    border: none;
 }
 section {
     text-align: center;
@@ -81,13 +98,7 @@ section {
     font-family: 'Muli', sans-serif
     font-weight: 700;
 }
-.page-header h2 {
-	font-size: 5em;
-    text-shadow: 3px 3px 5px #000;
-}
-.page-header h5 {
-	letter-spacing: 2px;
-}
+
 .about-section p {
 	text-align: left;
     line-height: 150%;
@@ -98,21 +109,26 @@ section {
 #aboutGU {
 	margin: 100px 0;
 }
+
+.about-collage {
+    margin: 0 auto 50px;
+}
+
 img.about-photos {
     margin-top: 20%;
 }
 .quote {
     margin-bottom: 20px;
 }
-/*#projNeigh, #contactInfo {
-	background-image: url('../images/bg/128-181.jpg');
-    background-repeat: repeat;
-    color: white;
-}*/
 
 .v-center-100 {
     min-height: inherit;
     display: flex;
+/*
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+*/
     justify-content: center;
     flex-direction: column;
 }
@@ -183,13 +199,6 @@ img.about-photos {
 }
 
 
-
-/*
-.carousel {
-    max-height: 80vh;
-    overflow: hidden;
-}
-*/
 footer {
     background: rgba(0,0,0,0.9);
     color: white;

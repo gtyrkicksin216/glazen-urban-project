@@ -1,5 +1,5 @@
 /* Custom Style */
-/* TODO: TURN ALL COLORS INTO HEX CODES */
+/* TODO: TURN ALL COLORS INTO HEX CODES AND/OR rgba */
 html, body {
     height: 100%;
     font-size: 100%;
@@ -22,7 +22,7 @@ h3 {
 	font-family: 'Open Sans', sans-serif;
     font-size: 90%;
     font-weight: 500;
-    color: white;
+    color: #FFF;
 }
 #navbar-collapse ul.nav li a:hover {
 	background-color: darkslategray;
@@ -52,7 +52,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    color: whitesmoke;
+    color: #F5F5F5;
     line-height: 150%;
 }
 .cover-text {
@@ -61,11 +61,11 @@ h3 {
 }
 
 .top-text {
-    background: rgba(255,255,255,0.8);
+    background: rgba(255,255,255,0.6);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    color: black;
+    color: #000;
     padding-bottom: 25px;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizelegibility;
@@ -73,7 +73,6 @@ h3 {
 
 #logo-img {
     margin: 0 auto;
-/*    background: rgba(255,255,255,0.7);*/
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -87,10 +86,9 @@ section {
     padding: 200px 100px;
 }
 .section-header {
-/*    font-size: 3em;*/
     font-family: 'Muli', sans-serif;
     font-weight: 600;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #FFF;
     margin-bottom: 40px;
 }
 .sub-sec-header {
@@ -124,11 +122,12 @@ img.about-photos {
 .v-center-100 {
     min-height: inherit;
     display: flex;
-/*
+    /* FIXME: FIGURE OUT WHY FLEXBOX DOESNT WORK ONCE UPLOADED */ 
+    /*
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-*/
+    */
     justify-content: center;
     flex-direction: column;
 }
@@ -142,7 +141,6 @@ img.about-photos {
 	max-height: 450px;
     min-height: 230px;
     border-radius: 10%;
-/*    margin-top: 10%;*/
 }
 .fader-image {
 	opacity: 0;
@@ -168,7 +166,7 @@ img.about-photos {
 	margin: 100px 0;
 }
 .embLink:link {
-	color: black;
+	color: #000;
 }
 .embLink:hover {
 	font-weight: 700;
@@ -184,10 +182,10 @@ img.about-photos {
 }
 #contactInfo a {
 	text-decoration: none;
-    color: black
+    color: #000;
 }
 #contactInfo a:hover {
-	color: grey;
+	color: #808080;
 }
 #contactInfo i {
 	font-size: 50px;
@@ -208,11 +206,11 @@ footer {
     font-size: 12px;
 }
 footer a {
-    color: firebrick;
+    color: #b22222;
     width: 100%;
 }
 footer a:hover {
-    color: honeydew;
+    color: #f0fff0;
     text-decoration: none;
 }
 
@@ -267,10 +265,11 @@ footer a:hover {
     .navbar-brand {
         font-size: 250%;
     }
-/*
+    /* LEAVE IN AS OPTION TO SHOW ALAN */
+    /*
     .jumbotron {
         background-image: url(../images/bg/cle_skyline_elise_opt.jpg);
-*/
+    */
     }
     p.lead {
         font-size: 20px;

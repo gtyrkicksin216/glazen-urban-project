@@ -266,10 +266,11 @@ footer a:hover {
         font-size: 250%;
     }
     /* LEAVE IN AS OPTION TO SHOW ALAN */
-    /*
+    
     .jumbotron {
         background-image: url(../images/bg/cle_skyline_elise_opt.jpg);
-    */
+/*        background-size: 100%;*/
+    
     }
     p.lead {
         font-size: 20px;

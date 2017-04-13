@@ -38,13 +38,14 @@ function flexboxApply(){
     }
 }
 
-
-$(document).ready(function(){
-    flexboxApply();
+// ==== RUNS THE FLEXBOXAPPLY FUNCTION WHEN ALL OF THE DOM ELEMENTS ARE LOADED
+$(window).on('load', function(){
+   flexboxApply(); 
 });
+
 $(window).resize(function(){
     flexboxApply();
-})
+});
 
 
 

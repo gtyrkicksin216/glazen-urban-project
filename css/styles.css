@@ -44,9 +44,13 @@ h3 {
     height: 100vh;
     text-align: center;
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     background-image: url('../images/bg/abbey-park.JPG');
     background-repeat: no-repeat;
@@ -93,7 +97,7 @@ section {
 }
 .sub-sec-header {
 	margin-top: 5%;
-    font-family: 'Muli', sans-serif
+    font-family: 'Muli', sans-serif;
     font-weight: 700;
 }
 
@@ -121,6 +125,8 @@ img.about-photos {
 
 .v-center-100 {
     min-height: inherit;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* FIXME: FIGURE OUT WHY FLEXBOX DOESNT WORK ONCE UPLOADED */ 
     /*
@@ -128,7 +134,12 @@ img.about-photos {
     display: -webkit-flex;
     display: -ms-flexbox;
     */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 .featurette-heading {
@@ -247,7 +258,7 @@ footer a:hover {
         font-size: 2em;
         font-weight: 700;
         letter-spacing: 110%;
-}
+    }
 /* CHANGE BODY FONT SIZE WHEN SWITCHING DOWN SO EVERYTHING SCALES ACCORDINGLY */
     section {
         text-align: center;
